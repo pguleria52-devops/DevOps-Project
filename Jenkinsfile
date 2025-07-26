@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-              git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/pguleria52-devops/DevOps-Project.git'
+              git branch: 'CI', credentialsId: 'git-cred', url: 'https://github.com/pguleria52-devops/DevOps-Project.git'
             }
         }
         stage("Frontend Compilation"){
